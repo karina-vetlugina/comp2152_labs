@@ -84,7 +84,7 @@ bad_loot_options = ["Poison Potion"]
 # Lab04 - Q1
 # Define the Monster Power
 monster_power = {
-    "FIre Magic" : 2,
+    "Fire Magic" : 2,
     "Freexing TIme" : 4,
     "Super Hearing" : 6
 }
