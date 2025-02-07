@@ -131,7 +131,7 @@ if not input_invalid:
     print("    |    Your belt: ", belt)
 
     ## Lab 5 - Question 4: Use Loot
-    
+    belt, health_points = functions_lab05.use_loot(belt, health_points)
 
     print("    ------------------------------------------------------------------")
     print("    |", end="    ")
@@ -170,13 +170,16 @@ if not input_invalid:
 
     # Lab 5: Call Recursive function
     print("    |", end="    ")
-    num_dream_lvls = input("How many dream levels do you want to go down?")
-    if :
-        
-        
+    num_dream_lvls = input("How many dream levels do you want to go down? ")
+    if num_dream_lvls != 0:
+        health_points -= 1
+        crazy_level = functions_lab05.inception_dream(num_dream_lvls)
+        combat_strength += crazy_level
         
         print("combat strength: " + str(combat_strength))
         print("health points: " + str(health_points))
+    else:
+        print("Invalid input")
 
     # Fight Sequence
     # Loop while the monster and the player are alive. Call fight sequence functions
@@ -208,17 +211,18 @@ if not input_invalid:
             print("    |", end="    ")
             input("The Monster strikes (Press enter)")
             
-            if :
-                
+            if health_points == 0:
+                num_stars = 1
+
             else:
                 print("    |", end="    ")
                 print("------------------------------------------------------------------")
                 input("The hero strikes!! (Press enter)")
-                
-                if :
-                    
+                m_health_points = functions_lab05.hero_attacks(combat_strength, m_health_points)
+                if m_health_points == 0:
+                    num_stars = 3
                 else:
-                    
+                    num_stars = 2
 
     # Final Score Display
     tries = 0
@@ -246,5 +250,5 @@ if not input_invalid:
     if not input_invalid:
         stars_display = "*" * num_stars
         # Lab 5 - Question 2: 
-        print("    |    Hero " + short_name + "gets <" + stars_display + "> stars")
+        print("    |    Hero " + short_name + " gets <" + stars_display + "> stars")
         
