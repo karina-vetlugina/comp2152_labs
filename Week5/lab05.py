@@ -239,11 +239,4 @@ if not input_invalid:
                 tries += 1
             else:
                 short_name = name[0][0:2:1] + name[1][0:1:1]
-                print("    |    I'm going to call you " + short_name + " for short")
-                input_invalid = False
-                
-
-    if not input_invalid:
-        stars_display = "*" * num_stars
-        # Lab 5 - Question 2: 
-        
+                print("    |    I'm going t
