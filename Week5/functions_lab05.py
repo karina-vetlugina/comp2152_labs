@@ -21,7 +21,7 @@ def use_loot(belt, health_points):
         print("    |    You used " + first_item + " to hurt your health to " + str(health_points))
     else:
         print("    |    You used " + first_item + " but it's not helpful")
-    return 
+    return belt, health_points
 
 
 # Lab 5: Question 3 
@@ -122,17 +122,4 @@ def inception_dream():
 
     # Base Case
 
-        print("    |    You are in the deepest dream level now")
-        print("    |", end="    ")
-        input("Start to go back to real life? (Press Enter)")
-        print("    |    You start to regress back through your dreams to real life.")
-
-
-    # Recursive Case
-
-        # inception_dream(5)
-        # 1 + inception_dream(4)
-        # 1 + 1 + inception_dream(3)
-        # 1 + 1 + 1 + inception_dream(2)
-        # 1 + 1 + 1 + 1 + inception_dream(1)
-        # 1 + 1 + 1 + 1 + 2
+        print("    |    You are i
